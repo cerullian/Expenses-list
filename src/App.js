@@ -1,10 +1,6 @@
 import Expenses from "./components/Expenses";
 
 function App() {
-  // this is called imperative, because we are giving clear instructions step-by-step what javascript and the browser should be doing
-  // const para = document.createElement('p');
-  // para.textContent = 'This is also visible!';
-  // document.getElementById('root').append(para);
 
   const expenses = [
     {
@@ -31,7 +27,6 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      {/* starts with capital letter, as it is a custom component made by someone */}
       <Expenses items={expenses} />
     </div>
   );
