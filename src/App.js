@@ -32,7 +32,7 @@ function App() {
     <div>
       <h2>Let's get started!</h2>
       {/* starts with capital letter, as it is a custom component made by someone */}
-      <Expenses expenses={expenses} />
+      <Expenses items={expenses} />
     </div>
   );
 }
