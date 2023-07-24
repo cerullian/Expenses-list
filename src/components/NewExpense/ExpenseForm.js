@@ -45,6 +45,16 @@ const ExpenseForm = (props) => {
         // });
     };
 
+    // const inputChangeHandler = (identifier, value) => {
+    //     if (identifier === "title") {
+    //         setEnteredTitle(value);
+    //     } else if (identifier === "date") {
+    //         setEnteredDate(value);
+    //     } else {
+    //         setEnteredAmount(value);
+    //     }
+    // };
+
     const submitHandler = (event) => {
         event.preventDefault();
 
@@ -68,6 +78,7 @@ const ExpenseForm = (props) => {
                     <input
                         type="text"
                         value={enteredTitle}
+                        // onChange={(event) => inputChangeHandler("title", event.target.value)}
                         onChange={titleChangeHandler}
                     />
                 </div>
@@ -78,6 +89,7 @@ const ExpenseForm = (props) => {
                         min="0.01"
                         step="0.01"
                         value={enteredAmount}
+                        // onChange={(event) => inputChangeHandler("amount", event.target.value)}
                         onChange={amountChangeHandler}
                     />
                 </div>
@@ -88,6 +100,7 @@ const ExpenseForm = (props) => {
                         min="2019-01-01"
                         max="2022-12-31"
                         value={enteredDate}
+                        // onChange={(event) => inputChangeHandler("date", event.target.value)}
                         onChange={dateChangeHandler}
                     />
                 </div>
